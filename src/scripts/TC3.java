@@ -24,6 +24,7 @@ public class TC3 extends Businessfns{
 		  click(RegPage.btnContinue);
 		  String msg=driver.findElement(RegPage.msgErr).getText();
 		  Assert.assertEquals(msg, "This is a required field.");
+		  System.out.println("this is for testing");
 		  Thread.sleep(3000);
 	} catch (Exception e) {
 		// TODO: handle exception
